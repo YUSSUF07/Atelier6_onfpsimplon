@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:azure; 
+     
+}
+
+
+form{
+    margin: 40px;
+    width: 380px;
+    background-color: rgba(236, 231, 227, 0.877);
+    padding:  20px 20px;
+    border-radius: 5px;
+
+}
+input{
+    display: block; 
+    margin-top: 5px;
+    margin-bottom: 7px;
+
+
+}
+
+
+.choisir-facebook{
+    padding:  20px 23px ;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.souligner{
+    text-align: center;
+    position: relative;
+}
+
+.souligner::after{
+    content: "";
+    display: block;
+    width: 45%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.souligner::before{
+    content: "";
+    display: block;
+    width: 45%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+
+
+.loginmdp{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form .loginmdp input[name="email"],input[name="motdepasse"]{
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: white;
+    margin-bottom: 5px;
+    outline: none;
+}
+.telephone{
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    width: 96%;
+    margin-bottom: 5px;
+    outline: none;
+}
+form .nom-prenom{
+    margin-top: 30px;
+    display: flex;
+}
+
+form .nom-prenom .gauche input{
+    margin-top: 8px;
+    padding: 5px 10px;
+
+}
+
+form .nom-prenom .droite{
+    margin-left: 35;
+}
+form .nom-prenom .gauche{
+    margin-right: 5%;
+}
+
+form .nom-prenom .droite input{
+    margin-top: 8px;
+    padding: 5px 10px;
+    
+}
+
+.inscription1{
+    padding: 2px 20px;
+    border: none;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: white;
+    background-color: blue;
+    left: 34%;
+    cursor: pointer;
+}
+.inscription2{
+    padding: 8px 30px;
+    border: none;
+    position: relative;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    background-color: blue;
+    margin-right: 5%;
+    cursor: pointer;
+    left: 66%;
+    }
+
+.inscription2::after{ 
+        content: "\279C"; 
+        width: 4%;
+}
